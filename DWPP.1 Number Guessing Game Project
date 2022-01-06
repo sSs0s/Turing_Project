@@ -1,0 +1,18 @@
+from random import randrange
+
+def guessing_game():
+    x = randrange(100)
+    user_value = int(input('Guess a number: '))
+    if user_value == x:
+        print('Just right')
+        pass
+    while user_value != x:
+        if user_value > x:
+            print ('Too high')
+        else:
+            print ('Too low')
+        user_value = int(input('Guess a number: '))
+        if user_value == x:
+            print('Just right')
+            pass
+
